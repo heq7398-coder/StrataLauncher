@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Inno Setup 输出
+installer/
+
+# 运行残留
+*.log
+*.part
+
+# IDE / 系统
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
