@@ -64,6 +64,9 @@ python app.py
 ## 打包发布
 
 ```bash
+# 0) 生成应用图标（仓库为纯文本源码，不含二进制；用纯 Python 脚本生成，无需任何依赖）
+python make_icon.py
+
 # 1) 打包主程序（单文件 exe）
 pyinstaller --onefile --windowed --name StrataControl \
     --hidden-import strata_ctl --hidden-import api_gate \
@@ -85,8 +88,8 @@ StrataLauncher/
 ├── strata_ctl.py          # Strata 引擎控制层：启动/停止/健康检查/安装目录管理/引擎更新
 ├── start_service.py       # 独立拉起模型服务的辅助脚本（进程脱钩）
 ├── shot.py                # 截图工具（模拟数据版，用于生成宣传图）
-├── make_icon.py           # 图标生成工具
-├── strata.ico             # 应用图标
+├── make_icon.py           # 图标生成工具（纯 Python，运行它生成 strata.ico）
+├── strata.ico             # 应用图标（由 make_icon.py 生成，仓库不包含二进制）
 ├── StrataInstaller.iss    # Inno Setup 6 安装包脚本（中文向导 + 自动桌面快捷方式）
 ├── ChineseSimplified.isl  # Inno Setup 简体中文语言包
 ├── CHANGELOG.md           # 更新日志
