@@ -53,7 +53,7 @@ Windows 桌面端的本地大模型控制台：一键启动 / 关闭 Strata 推�
 要求：Windows 10/11 x64、Python 3.10+
 
 ```bash
-git clone https://github.com/<你的用户名>/StrataLauncher.git
+git clone https://github.com/heq7398-coder/StrataLauncher.git
 cd StrataLauncher
 pip install -r requirements.txt
 python app.py
