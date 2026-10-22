@@ -23,7 +23,7 @@ import wx
 import strata_ctl as ctl
 import app as A
 
-OUT = Path(r"F:\Qwen3.8-27b\qwen27b\StrataLauncher\shots")
+OUT = Path(__file__).parent / "shots"
 OUT.mkdir(exist_ok=True)
 
 HIST = lambda base, amp: [round(base + amp * ((i * 37) % 17) / 17.0, 2) for i in range(60)]
