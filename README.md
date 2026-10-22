@@ -4,6 +4,16 @@ Windows 桌面端的本地大模型控制台：一键启动 / 关闭 Strata 推�
 
 ![当前版本](https://img.shields.io/badge/version-0.2.19-blue) ![平台](https://img.shields.io/badge/platform-Windows%2010%2F11%20x64-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
 
+## ⚠️ 重要声明与出处
+
+> **本仓库不是官方项目，也不包含任何官方代码的私有改动。** StrataLauncher 只是把以下两样东西**集合**到一个 Windows 桌面程序里的**第三方启动器 / 控制台**：
+>
+> - **Strata 引擎（官方出处）**：推理引擎本体来自 [Niko1221/Strata](https://github.com/Niko1221/Strata)（GitHub 官方仓库）。本控制台的启动 / 停止 / 健康检查 / 引擎更新 / 安装目录管理，全部是对该官方引擎的操作封装。
+> - **模型（出处）**：可下载的模型型号清单（型号 key、简介、下载大小、显存占用）来自 Strata 官方仓库 `setup.py` 中的 `MODELS` 定义；模型文件由官方发布渠道或各开源模型的原发布方提供，版权归各自作者所有。
+> - **本项目不包含任何模型权重与引擎二进制文件**，仅提供图形化启动、控制，以及把本地模型通过 OpenAI 兼容 API 对外暴露的配置能力（「对外配置 API 的集合版」）。
+>
+> 安装引擎与模型请遵循 Strata 官方仓库的许可证与使用条款；如有引擎 / 模型层面的问题，请到官方仓库反馈。
+
 ## 功能特性
 
 ### 模型管理（控制台页）
